@@ -295,6 +295,9 @@
             padding: 0;
             color: black;
             font-family: "Playfair Display", Georgia, serif; }
+          #colorlib-hero .flexslider .slider-text > .slider-text-inner .white {
+            color: white;
+          }
           #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
             margin-bottom: 20px;
             font-size: 60px;

@@ -1045,6 +1045,10 @@
       .project:hover .desc span {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0); }
+
+  .weblink {
+    text-decoration: underline;
+  }
   
   .btn-load-more {
     width: 100%; }

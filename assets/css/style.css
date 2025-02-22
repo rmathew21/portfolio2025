@@ -426,7 +426,8 @@ body.offcanvas {
   padding-bottom: 9em;
   clear: both;
   width: 100%;
-  display: block; }
+  display: block; 
+}
   @media screen and (max-width: 768px) {
     .colorlib-experience,
     .colorlib-skills,
@@ -437,8 +438,13 @@ body.offcanvas {
     .colorlib-services,
     .colorlib-contact {
       padding-top: 5em;
-      padding-bottom: 8em; } }
-
+      padding-bottom: 8em; 
+    } 
+  }
+  
+#work {
+  scroll-margin-top: 80px;
+}
 .author-img {
   background-size: cover;
   background-position: center center;
@@ -481,7 +487,9 @@ body.offcanvas {
 
 .hire {
   padding: 2em;
-  background: #f9bf3f; }
+  background: #f9bf3f; 
+  text-align: center;
+}
   .hire h2 {
     line-height: 1.5; }
   .hire .btn-hire {

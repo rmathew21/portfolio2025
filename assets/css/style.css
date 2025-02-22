@@ -184,59 +184,73 @@ figure {
               -moz-transform: scaleX(1);
               -ms-transform: scaleX(1);
               -o-transform: scaleX(1);
-              transform: scaleX(1); }
+              transform: scaleX(1); 
+            }
         #colorlib-aside #colorlib-main-menu ul li.active a {
-          color: #2c98f0; }
+          color: #2c98f0; 
+        }
           #colorlib-aside #colorlib-main-menu ul li.active a:after {
             visibility: visible;
             -webkit-transform: scaleX(1);
             -moz-transform: scaleX(1);
             -ms-transform: scaleX(1);
             -o-transform: scaleX(1);
-            transform: scaleX(1); }
+            transform: scaleX(1); 
+          }
   #colorlib-aside .colorlib-footer {
     font-size: 15px;
     text-align: center;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     padding: 0 20px;
-    width: 100%; }
+    width: 100%; 
+  }
     @media screen and (max-width: 768px) {
       #colorlib-aside .colorlib-footer {
         position: relative;
-        bottom: 0; } }
+        bottom: 0; 
+      } 
+      }
     #colorlib-aside .colorlib-footer span {
-      display: block; }
+      display: block; 
+    }
     #colorlib-aside .colorlib-footer ul {
       padding: 0;
-      margin: 0; }
+      margin: 0; 
+    }
       #colorlib-aside .colorlib-footer ul li {
         padding: 0;
         margin: 0;
         display: inline;
-        list-style: none; }
+        list-style: none; 
+      }
         #colorlib-aside .colorlib-footer ul li a {
           color: rgba(255, 255, 255, 0.3);
           padding: 4px; }
           #colorlib-aside .colorlib-footer ul li a:hover, #colorlib-aside .colorlib-footer ul li a:active, #colorlib-aside .colorlib-footer ul li a:focus {
             text-decoration: none;
             outline: none;
-            color: #2c98f0; }
+            color: #2c98f0; 
+          }
 
 .container-wrap {
   max-width: 1170px;
-  margin: 0 auto; }
+  margin: 0 auto; 
+}
 
 #colorlib-main {
   width: calc(100% - 300px);
   float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  transition: 0.5s; }
+  transition: 0.5s; 
+}
   @media screen and (max-width: 768px) {
     #colorlib-main {
       width: 100%;
-      padding: 0 1em; } }
+      padding: 0 1em; 
+    } 
+  }
 
 #colorlib-hero {
   min-height: 500px;
@@ -248,56 +262,76 @@ figure {
   #colorlib-hero .flexslider {
     border: none;
     z-index: 1;
-    margin-bottom: 0; }
+    margin-bottom: 0; 
+  }
     #colorlib-hero .flexslider .slides {
       position: relative;
-      overflow: visible; }
+      overflow: visible; 
+    }
       #colorlib-hero .flexslider .slides li {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;
         min-height: 400px;
-        position: relative; }
+        position: relative; 
+      }
     #colorlib-hero .flexslider .flex-control-nav {
       bottom: 20px;
       z-index: 1000;
       left: 20px;
       float: left;
-      width: auto; }
+      width: auto; 
+    }
       @media screen and (max-width: 768px) {
         #colorlib-hero .flexslider .flex-control-nav {
           right: 20px;
-          top: 100px; } }
+          top: 100px; 
+        } 
+        }
       #colorlib-hero .flexslider .flex-control-nav li {
         display: block;
-        margin-bottom: 10px; }
+        margin-bottom: 10px; 
+      }
         #colorlib-hero .flexslider .flex-control-nav li a {
           background: rgba(0, 0, 0, 0.5);
           -webkit-box-shadow: none;
           box-shadow: none;
           width: 12px;
           height: 12px;
-          cursor: pointer; }
+          cursor: pointer; 
+        }
           #colorlib-hero .flexslider .flex-control-nav li a.flex-active {
             cursor: pointer;
             background: transparent;
-            border: 2px solid #2c98f0; }
+            border: 2px solid #2c98f0; 
+          }
     #colorlib-hero .flexslider .flex-direction-nav {
-      display: none; }
+      display: none; 
+    }
     #colorlib-hero .flexslider .slider-text {
       display: table;
       opacity: 0;
       min-height: 500px;
-      z-index: 9; }
+      z-index: 9; 
+    }
       #colorlib-hero .flexslider .slider-text > .slider-text-inner {
         display: table-cell;
         vertical-align: middle;
         min-height: 700px;
         padding: 2.5em;
-        position: relative; }
-        @media screen and (max-width: 768px) {
+        position: relative; 
+        text-align: center;
+      }
+      @media screen and (max-width: 768px) {
+        #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+
+        }
+      }
+        @media screen and (min-width: 769px) {
           #colorlib-hero .flexslider .slider-text > .slider-text-inner {
-            text-align: center; } }
+            text-align: center; 
+          } 
+        }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           margin: 0;
           padding: 0;
@@ -310,7 +344,7 @@ figure {
           font-weight: 700; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
-              font-size: 28px; } }
+              font-size: 4em; } }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           font-size: 18px;
           line-height: 1.5;

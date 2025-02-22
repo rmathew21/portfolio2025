@@ -320,18 +320,43 @@ figure {
         min-height: 700px;
         padding: 2.5em;
         position: relative; 
+        text-align: center !important;
+      }
+
+      .col-md-8 {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+      }
+      #colorlib-hero .flexslider .slider-text > .slider-text-inner .desc {
         text-align: center;
+        width: 100%;
       }
       @media screen and (max-width: 768px) {
         #colorlib-hero .flexslider .slider-text > .slider-text-inner {
-
+          text-align: center !important; 
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
         }
       }
         @media screen and (min-width: 769px) {
           #colorlib-hero .flexslider .slider-text > .slider-text-inner {
             text-align: center; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
           } 
         }
+
+        /* @media screen and (min-width: 992px) {
+          #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+            text-align: left; 
+          } 
+        } */
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           margin: 0;
           padding: 0;
@@ -344,27 +369,37 @@ figure {
           font-weight: 700; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
-              font-size: 4em; } }
+              font-size: 4em; 
+              text-align: center;
+            } 
+          }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           font-size: 18px;
           line-height: 1.5;
           margin-bottom: 30px;
           font-weight: 300;
-          font-family: "Quicksand", Arial, sans-serif; }
+          font-family: "Quicksand", Arial, sans-serif; 
+        }
           #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 a {
             color: rgba(44, 152, 240, 0.8);
-            border-bottom: 1px solid rgba(44, 152, 240, 0.7); }
+            border-bottom: 1px solid rgba(44, 152, 240, 0.7); 
+          }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner .heading-section {
-          font-size: 50px; }
+          font-size: 50px; 
+        }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .heading-section {
-              font-size: 30px; } }
+              font-size: 30px; 
+            } 
+          }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner s
 .colorlib-lead {
           font-size: 20px;
-          color: #fff; }
+          color: #fff; 
+        }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner p {
-          margin-bottom: 0; }
+          margin-bottom: 0; 
+        }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
           font-size: 12px;
           text-transform: uppercase;
@@ -372,17 +407,22 @@ figure {
           color: #000;
           padding: 10px 15px !important;
           border: none;
-          font-weight: 400; }
+          font-weight: 400; 
+        }
           #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
             color: #000;
             border: 1px solid #000;
-            background: transparent !important; }
+            background: transparent !important; 
+          }
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
               background: transparent !important;
-              border: 1px solid #000 !important; }
+              border: 1px solid #000 !important; 
+            }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
-              width: 100%; } }
+              width: 100%; 
+            } 
+          }
 
 body.offcanvas {
   overflow-x: hidden; }
@@ -441,7 +481,7 @@ body.offcanvas {
       padding-bottom: 8em; 
     } 
   }
-  
+
 #work {
   scroll-margin-top: 80px;
 }

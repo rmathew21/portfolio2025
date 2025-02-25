@@ -243,12 +243,13 @@ figure {
         list-style: none; 
       }
         #colorlib-aside .colorlib-footer ul li a {
-          color: rgba(255, 255, 255, 0.3);
+          /* color: rgba(255, 255, 255, 0.3); */
+          color: #2c98f0;
           padding: 4px; }
           #colorlib-aside .colorlib-footer ul li a:hover, #colorlib-aside .colorlib-footer ul li a:active, #colorlib-aside .colorlib-footer ul li a:focus {
             text-decoration: none;
             outline: none;
-            color: #2c98f0; 
+            color: white; 
           }
 
 .container-wrap {

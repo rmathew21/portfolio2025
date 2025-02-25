@@ -51,6 +51,8 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 90%;
   text-align: center;
   padding: 10px 20px;
+  position: relative;
+  z-index: 9999 !important;
 }
 @media screen and (max-width: 768px) {
   .btn-view-port {

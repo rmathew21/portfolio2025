@@ -145,11 +145,11 @@
 
 	var clickMenu = function() {
 
-		$('#navbar a:not([class="external"])').click(function(event){
+		$('#navbar a:not([class="external"]), a[data-nav-section').click(function(event){
 			var section = $(this).data('nav-section'),
 				navbar = $('#navbar');
 
-				if ($(this).attr('href').startsWith('mailto:')) {
+				if ($(this).attr('href') && $(this).attr('href').startsWith('mailto:')) {
 					return;
 				}
 

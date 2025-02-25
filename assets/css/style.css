@@ -900,10 +900,42 @@ body.offcanvas {
 
 .colorlib-feature {
   text-align: left;
+  /* display: block !important; */
   width: 100%;
   float: left;
   margin-bottom: 40px;
-  position: relative; }
+  position: relative; 
+  /* background: rgba(255, 0, 0, 0.3); */
+  z-index: 5;
+}
+
+/* .colorlib-feature a {
+  pointer-events: auto !important;
+  display: inline-block;
+  padding: 10px;
+  background: white;
+} */
+
+/* .colorlib-text {
+  background: rgba(0, 255, 0, 0.3);
+} */
+
+/* .colorlib-text a {
+  position: relative;
+  z-index: 1000;
+  pointer-events: auto;
+} */
+/* @media screen and (max-width: 999px) {
+  .colorlib-text a {
+    display: inline-block;
+    pointer-events: auto;
+    z-index: 1000;
+  }
+} */
+
+/* .colorlib-icon {
+  background: rgba(0, 0, 255, 0.3);
+} */
   .colorlib-feature .colorlib-icon {
     position: absolute;
     top: 0;
@@ -916,38 +948,92 @@ body.offcanvas {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
-    border-radius: 2px; }
+    border-radius: 2px; 
+  }
     .colorlib-feature .colorlib-icon i {
       display: table-cell;
       vertical-align: middle;
       color: #2c98f0;
       font-size: 60px;
-      height: 100px; }
+      height: 100px; 
+    }
       @media screen and (max-width: 1200px) {
         .colorlib-feature .colorlib-icon i {
-          font-size: 40px; } }
+          font-size: 40px; 
+        } 
+      }
   .colorlib-feature .colorlib-text {
+    /* position: relative; */
     padding-left: 120px;
-    width: 100%; }
+    width: 100%; 
+    /* z-index: 9999 !important; */
+    /* background: yellow !important; */
+    /* padding: 10px !important; */
+    /* border: 1px solid red; */
+    /* flex-grow: 1; */
+    /* max-width: 100%; */
+  }
+
+  .colorlib-feature .colorlib-text a {
+    position: relative;
+    z-index: 9999 !important;
+    /* background: red !important; */
+    padding: 10px !important;
+    display: inline-block;
+  }
+
+  .colorlib-feature .colorlib-text p {
+    display: inline-block;
+  }
     .colorlib-feature .colorlib-text h2, .colorlib-feature .colorlib-text h3 {
       margin: 0;
-      padding: 0; }
+      padding: 0; 
+    }
     .colorlib-feature .colorlib-text h3 {
       font-weight: 500;
       margin-bottom: 20px;
       color: rgba(0, 0, 0, 0.7);
       font-size: 14px;
       letter-spacing: 3px;
-      text-transform: uppercase; }
+      text-transform: uppercase; 
+    }
   .colorlib-feature.colorlib-feature-sm .colorlib-text {
-    margin-top: 30px; }
+    margin-top: 30px; 
+  }
   .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
     color: #2c98f0;
-    font-size: 40px; }
+    font-size: 40px; 
+  }
     @media screen and (max-width: 1200px) {
       .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
-        font-size: 28px; } }
+        font-size: 28px; 
+      } 
+    }
 
+    .colorlib-feature, 
+    .colorlib-feature .colorlib-text, 
+    .colorlib-feature .colorlib-text a {
+        pointer-events: auto !important;
+    }
+
+    .colorlib-feature, .colorlib-text, .colorlib-icon, .colorlib-contact {
+      overflow: visible !important;
+    }
+
+    .email-container {
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px;
+      background: white;
+      z-index: 10;
+      position: relative;
+    }
+
+    a[href^="mailto:"] {
+      position: relative;
+      z-index: 9999;
+  }
+    
 .blog-entry {
   width: 100%;
   float: left;

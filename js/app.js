@@ -149,6 +149,10 @@
 			var section = $(this).data('nav-section'),
 				navbar = $('#navbar');
 
+				if ($(this).attr('href').startsWith('mailto:')) {
+					return;
+				}
+
 				if ( $('[data-section="' + section + '"]').length ) {
 			    	$('html, body').animate({
 			        	scrollTop: $('[data-section="' + section + '"]').offset().top - 55
@@ -307,4 +311,10 @@
 	});
 
 
+	document.addEventListener('click', function(event) {
+		var target = event.target.closest('a[href^="mailto:"]');
+		if (target) {
+			window.location.href = target.href;
+		}
+	}, true);
 }());

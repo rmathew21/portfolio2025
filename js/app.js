@@ -143,6 +143,55 @@
 
 	};
 
+	// var clickMenu = function() {
+	// 	$('a:not([class="external"])').click(function(event) {
+	// 		var section = $(this).data('nav-section'),
+	// 			navbar = $('#navbar');
+	
+	// 		// Allow "mailto:" links to function normally
+	// 		if ($(this).attr('href') && $(this).attr('href').startsWith('mailto:')) {
+	// 			return;
+	// 		}
+	
+	// 		// Ensure smooth scrolling for elements with data-nav-section
+	// 		if (section && $('[data-section="' + section + '"]').length) {
+	// 			event.preventDefault(); // Prevent default only if smooth scrolling applies
+	// 			$('html, body').animate({
+	// 				scrollTop: $('[data-section="' + section + '"]').offset().top - 55
+	// 			}, 500);
+	// 		}
+	
+	// 		// Close the mobile navbar if it's open
+	// 		if (navbar.hasClass('in')) {
+	// 			setTimeout(function () { 
+	// 				navbar.removeClass('in');
+	// 				navbar.attr('aria-expanded', 'false');
+	// 				$('.js-colorlib-nav-toggle').removeClass('active');
+	// 			}, 300); // Delay to ensure the click registers before closing
+	// 		}
+	// 	});
+	
+	// 	// Fix for buttons like "View Portfolio" that are outside the navbar
+	// 	$('a[data-nav-section]').off('click').on('click', function(event) {
+	// 		var section = $(this).data('nav-section');
+	
+	// 		// Ensure the target section exists
+	// 		if (section && $('[data-section="' + section + '"]').length) {
+	// 			event.preventDefault();
+	// 			$('html, body').animate({
+	// 				scrollTop: $('[data-section="' + section + '"]').offset().top - 55
+	// 			}, 500);
+	// 		}
+	// 	});
+	
+	// 	// Ensure event propagation is not blocked by Flexslider or other overlays
+	// 	$('.btn-view-port').off('click').on('click', function(event) {
+	// 		event.stopPropagation(); // Prevents conflicts
+	// 	});
+	// };
+	
+	
+
 	var clickMenu = function() {
 
 		$('#navbar a:not([class="external"]), a[data-nav-section').click(function(event){

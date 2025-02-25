@@ -443,6 +443,10 @@ figure {
             } 
           }
 
+          .flex-control-nav {
+            pointer-events: none !important;
+          }
+
 body.offcanvas {
   overflow-x: hidden; }
   body.offcanvas #colorlib-aside {

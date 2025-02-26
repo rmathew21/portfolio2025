@@ -481,7 +481,7 @@ body.offcanvas {
 .colorlib-skills,
 .colorlib-education,
 .colorlib-blog,
-.colorlib-work,
+.colorlib-projects,
 .colorlib-about,
 .colorlib-services,
 .colorlib-contact {
@@ -496,7 +496,7 @@ body.offcanvas {
     .colorlib-skills,
     .colorlib-education,
     .colorlib-blog,
-    .colorlib-work,
+    .colorlib-projects,
     .colorlib-about,
     .colorlib-services,
     .colorlib-contact {
@@ -1116,13 +1116,13 @@ body.offcanvas {
     -o-transform: scale(1.1);
     transform: scale(1.1); }
 
-.work-menu span {
+.project-menu span {
   margin-left: 10px; }
-  .work-menu span:first-child {
+  .project-menu span:first-child {
     margin-left: 0; }
-  .work-menu span a {
+    .project-menu span a {
     color: #000; }
-    .work-menu span a.active {
+    .project-menu span a.active {
       color: #2c98f0; }
 
 .full-link {

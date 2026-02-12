@@ -491,6 +491,10 @@ body.offcanvas {
   width: 100%;
   display: block; 
 }
+.colorlib-projects {
+  content-visibility: auto;
+  contain-intrinsic-size: 900px;
+}
   @media screen and (max-width: 768px) {
     .colorlib-experience,
     .colorlib-skills,
@@ -1350,7 +1354,7 @@ body.offcanvas {
     display: -moz-inline-stack;
     display: inline-block;
     zoom: 1;
-    *display: inline; }
+    display: inline; }
     .colorlib-social li a {
       font-size: 22px;
       color: #000;
@@ -1358,7 +1362,7 @@ body.offcanvas {
       display: -moz-inline-stack;
       display: inline-block;
       zoom: 1;
-      *display: inline;
+      display: inline;
       -webkit-border-radius: 7px;
       -moz-border-radius: 7px;
       -ms-border-radius: 7px;
@@ -1574,7 +1578,7 @@ body.offcanvas {
     display: -moz-inline-stack;
     display: inline-block;
     zoom: 1;
-    *display: inline;
+    display: inline;
     width: 30px;
     height: 2px;
     color: #000;
@@ -1687,3 +1691,19 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+
+  .animate-box.done {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    will-change: auto;
+  }
+
+  /* .reveal {
+    opacity: 0;
+    will-change: transform, opacity;
+  }
+  
+  .reveal .done {
+    will-change: auto;
+  } */
